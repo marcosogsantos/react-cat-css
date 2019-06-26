@@ -1,0 +1,104 @@
+
+.rosto {
+  width: 300px;
+  height: 300px;
+  background: white;
+  border-radius: 100%/30%;
+}
+.rosto:hover .olho-e{
+  height: 40px;
+  width:30px;
+  top: -25px;
+  left: -25px;
+  border-radius:0;
+  transform: scaleY(0.1) translate3d(100px,10px,0);
+}
+.rosto:hover .olho-d{
+  width:30px;
+  border-radius:0;
+  transform: scaleY(0.1) translate3d(180px,-400px,0);
+  
+}
+.olho-e {
+  width: 20px;
+  height: 40px;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  border-radius: 100%/50%;
+  transform: translate3d(100px,10px,0);
+  transition: 1s
+}
+
+.olho-d {
+  width: 20px;
+  height: 40px;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  border-radius: 100%/50%;
+  transform: translate3d(180px,-30px,0);
+  transition: 1s
+}
+.nariz {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(0, 0, 0);
+  padding: 0;
+  transform: translate3d(135px,120px,0) rotate(315deg);
+}
+.focinho-d {
+  width: 50px;
+  height: 25px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translate3d(150px,15px,0) rotate(180deg);
+}
+.focinho-e {
+  width: 50px;
+  height: 25px;
+  /* background-color: gold; */
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 3px solid rgb(0, 0, 0);
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translate3d(100px,40px,0) rotate(180deg);
+}
+
+.orelha-d {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid rgb(255, 255, 255);
+  transform: translate3d(0px,45px,0)
+}
+.orelha-e {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 100px solid white;
+  transform: translate3d(200px,140px,0)
+}
+
+.bigode{
+  width: 80px;
+  height: 2px;
+  background: black;
+}
+
+.borda {
+  border: solid red;
+}
+.centro {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
